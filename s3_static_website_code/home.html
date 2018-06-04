@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML page of send joke project</h2>
+<h3> If you subscribe you will receive a joke from icanhazdadjoke.com every night at midnight</h3>
+
+<form action="">
+  <input type="radio" id="subscribe" name="subscribe" value="subscribe"> subscribe<br>
+  <input type="radio" id="unsubscribe" name="subscribe" value="unsubscribe"> unsubscribe<br>
+</form>
+
+<div id="subscribe_form" style="display: none" >
+<form method="POST" action="https://1eydelkohc.execute-api.eu-west-1.amazonaws.com/subscribenow/subscribe2" accept-charset="utf-8">
+    <input type="email" name="email" value="">
+    <input type="submit" value="Subcribe email">
+</form>
+</div>
+
+
+<div id="unsubscribe_form" style="display: none">
+<form method="POST" action="https://1eydelkohc.execute-api.eu-west-1.amazonaws.com/unsubscribenow/unsubscribe" accept-charset="utf-8">
+    <input type="email" name="email" value="">
+    <input type="submit" value="Unsubcribe email">
+</form>
+</div>
+
+<p>If click on submit you will be subscribed to our email joke.</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#subscribe").click(function(){
+        $("#subscribe_form").show();
+		$("#unsubscribe_form").hide();
+    });
+    $("#unsubscribe").click(function(){
+        $("#unsubscribe_form").show();
+		$("#subscribe_form").hide();
+    });
+});
+</script>
+
+</body>
+</html>
