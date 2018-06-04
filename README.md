@@ -37,3 +37,5 @@ The api gateway methods (both subscribe2 and unsubscribe) before passing the par
 
 
 ![alt text](https://github.com/emilianoangieri/PDPlatformEngineerProject/blob/master/api-gateway.PNG)
+
+![alt text](https://github.com/emilianoangieri/PDPlatformEngineerProject/blob/master/body-mapping.PNG)
