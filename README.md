@@ -33,4 +33,7 @@ A CloudWatch rules named "send-joke-trigger" trigger the lambda function named "
 ### Some technical details
 
 The "subscribe" and "unsubsribe" lambda function checks before complete any action, if an email exist or not on SNS topic named "email".
-The api gateway methods (both subscribe2 and unsubscribe) before passing the parameter received from frontend to lambda, processed it into "Integration Request", 
+The api gateway methods (both subscribe2 and unsubscribe) before passing the parameter received from frontend to lambda, processed it into the "Integration Request" steps, transoforming the source into a json readble from lambda (the code is available in api-gateway/Integration Request) folder.
+
+
+![alt text](https://github.com/emilianoangieri/PDPlatformEngineerProject/blob/master/api-gateway.PNG)
