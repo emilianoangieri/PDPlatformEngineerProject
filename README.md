@@ -15,6 +15,9 @@ Basically there are two main options available on frontend, subscribe and unsubs
 
 Clicking on "subscribe" or "unsubsribe" a form will be shown and is possible to add the email that the user would like to subscribe/unsubscribe to the email joke.
 
+![alt text](https://github.com/emilianoangieri/PDPlatformEngineerProject/blob/master/subscribe.PNG)
+
+
 The submit form of subscribe call a method defined on the api-gaetway, called subscribe2.
 This method trigger a lambda function named "subscribe" that add the email address into an SNS topic named "email". 
 
