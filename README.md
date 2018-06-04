@@ -28,3 +28,9 @@ This method trigger a lambda function named "unsubscribe" that remove the email 
 
 A lambda function named "send_joke" retrieve the joke from https://icanhazdadjoke.com/api#fetch-a-random-dad-joke and publish it to the SNS topic named "email".
 A CloudWatch rules named "send-joke-trigger" trigger the lambda function named "send_joke" every midnight.
+
+
+### Some technical details
+
+The "subscribe" and "unsubsribe" lambda function checks before complete any action, if an email exist or not on SNS topic named "email".
+The api gateway methods (both subscribe2 and unsubscribe) before passing the parameter received from frontend to lambda, processed it into "Integration Request", 
