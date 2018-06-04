@@ -2,7 +2,7 @@
 
 Below it is reported the architecture diagram of Platform Engineer Project.
 
-![alt text](https://github.com/emilianoangieri/PDPlatformEngineerProject/edit/master/architecture.PNG)
+![alt text](https://github.com/emilianoangieri/PDPlatformEngineerProject/blob/master/architecture.PNG)
 
 ### Project Description
 
