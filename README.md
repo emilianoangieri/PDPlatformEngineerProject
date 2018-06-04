@@ -6,9 +6,12 @@ Below it is reported the architecture diagram of Platform Engineer Project.
 
 ### Project Description
 
-Create a serverless application on AWS that deploys via CloudFormation.
+The architecture is composed of frontend and backend.
 
-This application should expose two API endpoints. One to `subscribe` an email address, and another to `unsubscribe`. Once subscribed, an email should be sent once a day containing a random fact/joke/quote.
+The frontend is a static website hosting reachable here http://test-pdp-platform-engineer-project.s3-website-eu-west-1.amazonaws.com.
+
+Clicking on "subscribe" or "unsubsribe" will show down the form on which is possible to add the email filed that the user would like to subscribe/unsubscribe to the email joke.
+
 
 #### Deliverables
 
