@@ -27,4 +27,4 @@ This method trigger a lambda function named "unsubscribe" that remove the email 
 
 
 A lambda function named "send_joke" retrieve the joke from https://icanhazdadjoke.com/api#fetch-a-random-dad-joke and publish it to the SNS topic named "email".
-A CloudWatch rules named "send-joke-trigger" that trigger the lambda function named "send_joke" every midnight.
+A CloudWatch rules named "send-joke-trigger" trigger the lambda function named "send_joke" every midnight.
